@@ -27,7 +27,6 @@ function [ SetOfClusters, RD, CD, order ] = cluster_optics(points, minpts, epsil
 
 disp('Calculating reachability for all points.');
 tic;
-load('optics_cluster.mat');
 [RD,CD,order]=optics(points,minpts);
 toc;
 
