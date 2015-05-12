@@ -7,7 +7,9 @@
 
 % This software is licensed under GPLv3, see included glpv3.txt.
 
-% ::IMPORTANT:: load your data to 'points'
+% ::IMPORTANT:: load your data to 'points'. Here is some example data:
+load('example_data.mat');
+
 [ SetOfClusters, RD, CD, order ] = cluster_optics(points, minpts, epsilon);
 
 bar(RD(order));
